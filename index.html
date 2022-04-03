@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Istok+Web:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kadashi</title>
   </head>
   <body>
+    <!-- nav  -->
     <nav class="nav-bar">
       <img src="images/logo-kadashi.png" alt="logo" class="logo" />
       <ul class="nav__links">
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Reviews</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="grow"><a href="#menu">Menu</a></li>
+        <li class="grow"><a href="#review">Reviews</a></li>
+        <li class="grow"><a href="#contact">Contact</a></li>
+        <li class="grow"><a href="#singup">Sing up</a></li>
       </ul>
     </nav>
+    <header class="poster">
+      <div class="poster-left">
+        <img
+          src="images/logo-hero-left..png"
+          alt="logo"
+          class="poster img__logo"
+        />
+      </div>
+      <div class="poster-rigth">
+        <img
+          src="images/hero-mage-rigth.png"
+          alt="food"
+          class="poster img__food"
+        />
+      </div>
+    </header>
+
     <!-- menu  -->
-    <section id="menu">
+    <section id="#menu">
       <article class="Menu-cards">
         <div class="card__header">
           <figure class="card__figure">
@@ -70,6 +96,8 @@
         </div>
       </article>
     </section>
+
+    <!-- review  -->
     <section id="review">
       <div class="content-2">
         <div class="card__client">
@@ -102,6 +130,8 @@
         </div>
       </div>
     </section>
+
+    <!-- sing up  -->
     <section id="delivery">
       <div class="sig">
         <h2 class="sig__title">Request your delivery..</h2>
@@ -112,6 +142,8 @@
         <button class="sig__btn">sign up</button>
       </div>
     </section>
+
+    <!-- footer  -->
     <footer class="footer">
       <h3 class="footer__title">Desin By JoB for The Odin Proyect</h3>
     </footer>
