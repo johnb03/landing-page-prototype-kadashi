@@ -16,15 +16,15 @@
   </head>
   <body>
     <!-- nav  -->
-    <nav class="nav-bar">
+    <nav class="nav-bar nav__sticky">
       <img src="images/logo-kadashi.png" alt="logo" class="logo" />
       <ul class="nav__links">
         <li class="grow"><a href="#menu">Menu</a></li>
         <li class="grow"><a href="#review">Reviews</a></li>
-        <li class="grow"><a href="#contact">Contact</a></li>
         <li class="grow"><a href="#singup">Sing up</a></li>
       </ul>
     </nav>
+    <!-- welcome section -->
     <header class="poster">
       <div class="poster-left">
         <img
@@ -43,74 +43,90 @@
     </header>
 
     <!-- menu  -->
-    <section id="#menu">
-      <article class="Menu-cards">
-        <div class="card__header">
-          <figure class="card__figure">
-            <img src="images/Ramen.png" alt="Ramen" class="card__image" />
-            <div class="card__body">
-              <h2 class="card__title">Ramen</h2>
-              <p class="card__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                est consequuntur vitae laboriosam
-              </p>
-              <footer class="card__footer">
-                <div class="card__actions"></div>
-                <button class="button">Button</button>
-              </footer>
-            </div>
-          </figure>
+    <section id="menu">
+      <article class="menu-cards">
+        <div class="card">
+          <div class="card__header">
+            <figure class="card__figure">
+              <img src="images/Ramen.png" alt="Ramen" class="card__image" />
+            </figure>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Ramen</h2>
+            <p class="card__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero est
+              consequuntur vitae laboriosam
+            </p>
+            <footer class="card__footer">
+              <div class="card__actions"></div>
+              <button class="button">Buy</button>
+            </footer>
+          </div>
         </div>
 
-        <div class="card__header">
-          <figure class="card__figure">
-            <img src="images/egg-roll.png" alt="egg-roll" class="card__image" />
-            <div class="card__body">
-              <h2 class="card__title">Egg-rolls</h2>
-              <p class="card__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                est consequuntur vitae laboriosam
-              </p>
-              <footer class="card__footer">
-                <div class="card__actions"></div>
-                <button class="button">Button</button>
-              </footer>
-            </div>
-          </figure>
+        <div class="card">
+          <div class="card__header">
+            <figure class="card__figure">
+              <img
+                src="images/egg-roll.png"
+                alt="egg-roll"
+                class="card__image"
+              />
+            </figure>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Egg-rolls</h2>
+            <p class="card__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero est
+              consequuntur vitae laboriosam
+            </p>
+            <footer class="card__footer">
+              <div class="card__actions"></div>
+              <button class="button">Buy</button>
+            </footer>
+          </div>
         </div>
-        <div class="card__header">
-          <figure class="card__figure">
-            <img src="images/sushi.png" alt="sushi" class="card__image" />
-            <div class="card__body">
-              <h2 class="card__title">Sushi</h2>
-              <p class="card__text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero
-                est consequuntur vitae laboriosam
-              </p>
-              <footer class="card__footer">
-                <div class="card__actions"></div>
-                <button class="button">Button</button>
-              </footer>
-            </div>
-          </figure>
+        <div class="card">
+          <div class="card__header">
+            <figure class="card__figure">
+              <img src="images/sushi.png" alt="sushi" class="card__image" />
+            </figure>
+          </div>
+          <div class="card__body">
+            <h2 class="card__title">Sushi</h2>
+            <p class="card__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero est
+              consequuntur vitae laboriosam
+            </p>
+            <footer class="card__footer">
+              <div class="card__actions"></div>
+              <button class="button">Buy</button>
+            </footer>
+          </div>
         </div>
       </article>
     </section>
 
     <!-- review  -->
     <section id="review">
-      <div class="content-2">
+      <div class="content">
         <div class="card__client">
-          <img src="images/review-client-1.png" alt="client" />
+          <div class="client__info">
+            <img src="images/review-client-1.png" alt="client" />
+            <h3 class="client__name">Maria carey</h3>
+          </div>
           <p>lorem,impsum</p>
         </div>
-        <div class="card__client">
-          <img src="images/review-client-2.png" alt="client" />
+        <div class="card__client client__center">
+          <div class="client__info">
+            <img src="images/review-client-2.png" alt="client" />
+            <h3 class="client__name">lana Croft</h3>
+          </div>
           <p>lorem,impsum</p>
         </div>
         <div class="review-box__rigth">
           <div class="rating__client">
-            <h2 class="rating__title">Review From cllients</h2>
+            <h2 class="rating__title">Review from cllients</h2>
             <picture class="rating"
               ><img src="images/Vector.svg" alt="star" />
 
@@ -123,8 +139,11 @@
               <img src="images/Vector.svg" alt="estar" />
             </picture>
           </div>
-          <div class="card__client">
-            <img src="images/reviwe-client-3.png" alt="client" />
+          <div class="card__client client__end">
+            <div class="client__info">
+              <img src="images/reviwe-client-3.png" alt="client" />
+              <h3 class="client__name">Victor Von Dum</h3>
+            </div>
             <p>lorem,impsum</p>
           </div>
         </div>
@@ -132,20 +151,28 @@
     </section>
 
     <!-- sing up  -->
-    <section id="delivery">
-      <div class="sig">
-        <h2 class="sig__title">Request your delivery..</h2>
-        <p class="sig__subtitle">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry.
-        </p>
-        <button class="sig__btn">sign up</button>
+    <section id="singup">
+      <div class="content-2">
+        <div class="sig">
+          <div class="sig__left">
+            <h2 class="sig__title">Request your delivery..</h2>
+            <p class="sig__subtitle">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry.
+            </p>
+          </div>
+          <div class="sig__rigth">
+            <button class="sig__btn">sign up</button>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- footer  -->
     <footer class="footer">
-      <h3 class="footer__title">Desin By JoB for The Odin Proyect</h3>
+      <div class="footer__box">
+        <h3 class="footer__title">&copy;Desin By JoB for The Odin Proyect</h3>
+      </div>
     </footer>
   </body>
 </html>
